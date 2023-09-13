@@ -1,0 +1,66 @@
+<%@ include file="head.jsp" %>
+        <link rel="stylesheet" type="text/css" href="signin.css"></link>
+        <title>Register Form</title>
+        
+
+    </head>
+
+    <body>
+
+<br><br><br>
+		
+        <div class="container" id="container" >
+            <div class="form-container sign-up-container">
+                <form action="RegisterUser" method="POST">
+                    <h2 class="header2">Create Account</h2>&nbsp;
+                    <input type="text" name="name" placeholder="Name" />
+                    <input type="email" name="useremail" placeholder="Email" />
+                    <input type="password" name="password" placeholder="Password" />&nbsp;
+                    <button class="button2" onclick="profile()">Sign up</button>&nbsp;
+                    <span class="label-text">or sign up using</span>
+                    <div class="social-container s-con2">
+                        <a href="#" class="social"><i class="fa fa-fw fa-facebook"></i></a>
+                        <a href="#" class="social"><i class="fa fa-fw fa-google-plus"></i></a>
+                        <a href="#" class="social"><i class="fa fa-fw fa-twitter"></i></a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-container sign-in-container">
+                <form action="VerifyLogin" method="POST">
+                    <h2 class="header1">Sign in</h2>&nbsp;
+                    <input type="email" name="useremail" placeholder="Email" />
+                    <input type="password" name="password" placeholder="Password" />&nbsp;
+                    <button class="button1">Sign In</button>&nbsp;
+                    <span class="label-text">or connect with</span>
+                    <div class="social-container s-con1">
+                        <a href="#" class="social"><i class="fa fa-fw fa-facebook"></i></a>
+                        <a href="#" class="social"><i class="fa fa-fw fa-google-plus"></i></a>
+                        <a href="#" class="social"><i class="fa fa-fw fa-twitter"></i></a>
+                    </div>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back</h1>
+                        <p>To keep connected with us please login with your details</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello Friend</h1>
+                        <p>Enter your personal details and start your journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!--button onclick="dark()">Dark mode</button-->
+
+        <script src="signin.js"></script>
+
+    </body>
+
+</html>

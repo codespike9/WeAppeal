@@ -1,0 +1,67 @@
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
+* {
+    box-sizing: border-box;
+	  box-shadow: #222;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    margin: -20px 0 50px;
+    padding-top: 40px;
+    color: #2e323c;
+    position: relative;
+    height: 100%;
+    background-color: #4686a0;
+    background-attachment: fixed, fixed, fixed;
+    background-image: url('images/bg1.png'), url('images/bg2.svg'), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+    background-position: top left, center center, center center;
+    background-size: auto, cover, cover;
+}
+.container{
+	padding-left:200px;
+	padding-top:1rem;
+	position:fixed;
+}
+.card {
+    font-size: 15px;
+    position: relative;
+    box-shadow: #222;
+    background: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+    background:
+}
+
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes load {
+  0% {
+    stroke-dashoffset: 570;
+  }
+  50% {
+    stroke-dashoffset: 530;
+  }
+  100% {
+    stroke-dashoffset: 570;
+    transform: rotate(360deg);
+  }
+}
